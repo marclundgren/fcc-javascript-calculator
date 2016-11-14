@@ -3,7 +3,7 @@ import { expect } from 'chai';
 import { spy } from 'sinon';
 import React from 'react';
 import { shallow } from 'enzyme';
-import Counter from '../../app/components/Counter';
+import Calculator from '../../app/components/Calculator';
 
 
 function setup() {
@@ -13,7 +13,7 @@ function setup() {
     incrementAsync: spy(),
     decrement: spy()
   };
-  const component = shallow(<Counter counter={1} {...actions} />);
+  const component = shallow(<Calculator counter={1} {...actions} />);
   return {
     component,
     actions,
@@ -23,7 +23,7 @@ function setup() {
 }
 
 
-describe('Counter component', () => {
+describe('Calculator component', () => {
   it('should should display count', () => {
     const { p } = setup();
     expect(p.text()).to.match(/^1$/);

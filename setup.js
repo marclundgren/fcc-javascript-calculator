@@ -13,15 +13,15 @@ module.exports = {
   // remove the following files as they are mostly
   // related to the sample counter page and functionality
   remove: [
-    { file: 'app/actions/counter.js' },
-    { file: 'app/components/Counter.css' },
-    { file: 'app/components/Counter.js' },
-    { file: 'app/containers/CounterPage.js' },
-    { file: 'app/reducers/counter.js' },
-    { file: 'test/actions/counter.spec.js' },
-    { file: 'test/components/Counter.spec.js' },
-    { file: 'test/containers/CounterPage.spec.js' },
-    { file: 'test/reducers/counter.spec.js' },
+    { file: 'app/actions/calculator.js' },
+    { file: 'app/components/Calculator.css' },
+    { file: 'app/components/Calculator.js' },
+    { file: 'app/containers/CalculatorPage.js' },
+    { file: 'app/reducers/calculator.js' },
+    { file: 'test/actions/calculator.spec.js' },
+    { file: 'test/components/Calculator.spec.js' },
+    { file: 'test/containers/CalculatorPage.spec.js' },
+    { file: 'test/reducers/calculator.spec.js' },
     { file: 'CHANGELOG.md' },
     { file: 'erb-logo.png' }
   ],
@@ -31,11 +31,11 @@ module.exports = {
   clean: [
     {
       file: 'app/reducers/index.js',
-      pattern: /counter/
+      pattern: /calculator/
     },
     {
       file: 'app/store/configureStore.development.js',
-      pattern: /counterActions/
+      pattern: /calculatorActions/
     },
     {
       file: 'app/app.global.css',
@@ -43,7 +43,7 @@ module.exports = {
     },
     {
       file: 'app/routes.js',
-      pattern: /CounterPage/
+      pattern: /CalculatorPage/
     },
     {
       file: 'test/e2e.js',

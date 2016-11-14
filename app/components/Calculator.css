@@ -1,3 +1,23 @@
+.inputOutputContainer, .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.inputOutputContainer {
+  border: 1px solid;
+  border-radius: 1rem;
+  padding: 1rem;
+  align-items: flex-end;;
+  width: 30rem;
+  /*flex-direction: column;*/
+}
+
+.backLinkContainer {
+  align-self: flex-start;
+}
+
 .backButton {
   position: absolute;
 }
