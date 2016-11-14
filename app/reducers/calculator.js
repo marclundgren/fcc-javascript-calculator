@@ -5,6 +5,10 @@ function isNumber(value) {
   return typeof Number(value) === 'number';
 }
 
+function isOperand(value) {
+  return String(value).match(/(\+|-|x|\/)/);
+}
+
 function balanceMultiplicative(expression) {
   const operandMultiply = expression.indexOf('x');
   const operandDivide = expression.indexOf('/');
@@ -54,6 +58,9 @@ function balance(expression) {
 
 export default function calculator(state: string = '0', action: Object) {
   function normalizeInput(input) {
+    if (isOperand(input) && isOperand(state[state.length - 1])) {
+      return `${state.slice(0, state.length - 1)}${input}`;
+    }
     if (isNumber(input)) {
       return `${state === '0' ? '' : state}${input}`;
     }

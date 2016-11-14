@@ -11,32 +11,15 @@
   padding: 1rem;
   align-items: flex-end;;
   width: 30rem;
-  /*flex-direction: column;*/
 }
 
 .backLinkContainer {
   align-self: flex-start;
 }
 
-.backButton {
+/*.backButton {
   position: absolute;
-}
-
-.counter {
-  position: absolute;
-  top: 30%;
-  left: 45%;
-  font-size: 10rem;
-  font-weight: bold;
-  letter-spacing: -.025em;
-}
-
-.btnGroup {
-  position: relative;
-  top: 500px;
-  width: 480px;
-  margin: 0 auto;
-}
+}*/
 
 .btn {
   font-size: 1.6rem;
